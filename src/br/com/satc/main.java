@@ -53,14 +53,15 @@ public class main {
      Aluno aluno;
      
      String nomeAluno = JOptionPane.showInputDialog("Informe o seu nome: ");
-     Date dataMatricula = sdf.parse(JOptionPane.showInputDialog("Iforme o numero da sua maticula: "));
+     int matricula = Integer.parseInt(JOptionPane.showInputDialog("Informe o numero da sua matrícula: "));
+     Date dataMatricula = sdf.parse(JOptionPane.showInputDialog("Iforme a data da sua maticula: "));
      String rgAluno = JOptionPane.showInputDialog("Informe o seu rg: ");
      String cpfAluno = JOptionPane.showInputDialog("Informe o seu cpf: ");
      Date dataNascimentoAluno = sdf.parse(JOptionPane.showInputDialog("Iforme a data de nascimento: "));
      
      aluno = new Aluno(matricula, dataMatricula, nome, rg, cpf, dataNascimento);
-     JOptionPane.showInputDialog(null, aluno.toString())
-;     
+     JOptionPane.showInputDialog(null, aluno.toString());
+    
     }
     
 }
