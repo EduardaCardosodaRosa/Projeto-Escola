@@ -120,6 +120,11 @@ public class main {
               int pesquisarDisciplina =Integer.parseInt(JOptionPane.showInputDialog("Qual disciplina voce deseja consutar? \n  "));
               materias.get(pesquisarDisciplina);
               JOptionPane.showConfirmDialog(null,materias.get(pesquisarDisciplina).toString());
+ {
+              }
+                       
+            
+              
           }
               break;
               
